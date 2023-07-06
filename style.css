@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+:root {
+    --bg-dark-light: #1e1e26;
+    --bg-success-light: #07d962;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+/* Definição de cores */
+.bg-dark-light {
+    background-color: var(--bg-dark-light);
+}
+
+.bg-success-light {
+    background-color: var(--bg-success-light);
+}
+
+/* Configuração da classe active */
+.active {
+    border-bottom: thick double #32a1ce;
+}
+
+/* Definição de tamanho de icones */
+i.bi.bi-clipboard2-x-fill {
+    font-size: 4rem;
+    color: red;
+}
+i.bi.bi-clipboard2-check-fill {
+    font-size: 4rem;
+    color: green;
+}
+
+span.value-card {
+    font-size: 4rem;
+    text-align: center;
+}

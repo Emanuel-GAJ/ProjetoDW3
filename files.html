@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Página Inicial</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body class="bg-secondary">
+    <!-- Navbar-->
+    <nav class="navbar navbar-expand-lg bg-dark-light shadow mb-4" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand text-warning fw-bold p-2 fs-3" href="#">
+                <i class="bi bi-folder-symlink"></i>&nbsp;Fileshare
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon text-white"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="nav-items-1">
+                    <li class="nav-item">
+                        <a class="nav-link text-white" aria-current="page" href="home.html">
+                            <i class="bi bi-house text-info"></i>&nbsp;Página inicial
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="send.html" aria-current="page">
+                            <i class="bi bi-send text-success fw-bold"></i>&nbsp;Enviar Arquivo
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white active" href="files.html" aria-current="page">
+                            <i class="bi bi-folder-check text-warning fw-bold"></i>&nbsp;Arquivos Enviados
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="remote.html" aria-current="page">
+                            <i class="bi bi-pc-display"></i>&nbsp;Arquivos Remotos
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="users.html" aria-current="page">
+                            <i class="bi bi-people text-danger fw-bold"></i>&nbsp;Usuários
+                        </a>
+                    </li>
+                </ul>
+                <div class="d-flex">
+                    <!-- Nome do usuário sem dropdown -->
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="nav-items-2">
+                        <li class="nav-item mx-sm-0 mx-md-0 mx-lg-3">
+                            <a class="nav-link text-white" href="#" aria-current="page">
+                                <i class="bi bi-person-circle text-primary"></i>&nbsp;&nbsp;<span class="text-warning"
+                                    id="span-username"></span>
+                            </a>
+                        </li>
+
+                        <li class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <button class="btn btn-outline-danger btn-sm fw-bold" type="button" id="btn-logout">
+                                <i class="bi bi-box-arrow-right"></i>&nbsp;Sair
+                            </button>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main -->
+    <section>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-12 col-md-12 col-lg-12">
+                    <div class="card bg-dark-light shadow">
+                        <div class="card-body">
+                            <table class="table table-dark table-striped">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Nome</th>
+                                        <th scope="col">Tipo</th>
+                                        <th scope="col">Tamanho</th>
+                                        <th scope="col">Caminho Remoto</th>
+                                        <th scope="col">Data de Envio</th>
+                                        <th scope="col">Status do Envio</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="tbody-list-files">
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+
+    <script type="module" src="js/files.js"></script>
+</body>
+
+</html>
